@@ -57,6 +57,8 @@ export default {
       this.$refs.loginFormRef.validate(async (valid) => {
         // eslint-disable-next-line no-console
         console.log(valid);
+        // eslint-disable-next-line no-console
+        console.log(22222);
         if (!valid) return;
         const { data: res } = await this.$http.post('login', this.loginForm);
 
